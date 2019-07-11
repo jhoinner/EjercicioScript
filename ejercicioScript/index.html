@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+
+    <style>
+
+       body{
+     width: 50%;
+     margin: auto;
+     }
+
+     #tabla{
+     width: 100%;
+     text-align: center;
+     }
+     .ancho>th, td{
+     border: 1px solid black;
+      }
+      .buttom{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center; 
+      margin-top: 1em;
+      border-top: 1px solid #cccccc;
+      margin-bottom: 1em;
+      padding-top: 1em;
+     }
+      .parrafo{
+      width: 20em;
+      margin: 1em auto;
+       }
+
+       body{
+           background: gray;
+       }
+
+    </style>
+
+</head>
+
+
+
+
+<body>
+
+
+    <form>
+
+          <p class="parrafo">
+           <label>Nombres: </label> <input     type="text" id="nombre"     placeholder="Ingrese nombre">
+          </p>
+
+        <p class="parrafo">
+            <label>Apellidos: </label> <input   type="text" id="apellidos"    placeholder="Ingrese apellidos">
+        </p>
+        <p class="parrafo">
+            <label>Género: </label> <select     id="generos">
+                <option value="" disable selected>--Selecciona--</option>
+                <option>Masculino</option>
+                <option>Femenino</option>
+            </select>
+        </p>
+        <p class="parrafo">
+            <label>Estado civil:</label> 
+            <input type="radio" id="casado"     name="casado">
+            <label for="casado" id="casado">Casado</label> 
+            <input type="radio" id="soltero"    name="soltero">
+            <label for="soltero" id="soltero">Soltero</label>
+        </p>
+    </form>
+
+
+    <div class="buttom">
+        <button id="boton" type="submit">Agregar</button>
+    </div>
+
+    <table id="tabla" class="table table-dark">
+        <tr class="ancho">
+            <th>Nombres</th>
+            <th>Apellidos</th>
+            <th>Género</th>
+            <th>Estado Civil</th>
+        </tr>
+    </table>
+    <script src="js/script.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
